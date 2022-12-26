@@ -37,7 +37,8 @@ img {
   width: 1158px;
   padding-left: 15px;
   padding-right: 15px;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
   /* outline: 1px solid red; */
 }
 /* ----------------header----------------*/
@@ -147,6 +148,10 @@ img {
   letter-spacing: 0.02em;
   color: var(--hero-title-color);
 
+  width: 496px;
+  margin-right: auto;
+  margin-left: auto;
+
   margin-bottom: 48px;
 }
 
@@ -199,6 +204,8 @@ img {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--secondary-text);
+
+  margin-bottom: 8px;
 }
 
 .skills-list {
@@ -265,7 +272,8 @@ img {
 }
 
 .team-wrap {
-  padding: 32px 60px;
+  padding-top: 32px;
+  padding-bottom: 32px;
   background: #ffffff;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
@@ -354,35 +362,29 @@ img {
   cursor: pointer;
 
   padding: 12px 24px;
-  border: 1px solid #e7e9fc;
+  border: 1px solid var(--footer-text);
   border-radius: 4px;
-  border-color: transparent;
 }
 .portfolio-btn:focus,
 .portfolio-btn:hover {
   color: var(--hero-title-color);
   background-color: var(--hover-focus);
+  border-color: var(--hover-focus);
 }
 
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
-
-  margin-left: -24px;
-  margin-top: -20px;
+  gap: 48px 24px;
 }
 
 .portfolio-li {
-  flex-basis: calc(100% / 3  - 24px);
-  margin-left: 24px;
-  margin-top: 48px;
 }
 
 .portfolio-wrap {
-  border: 1px solid #E7E9FC;
+  border: 1px solid #e7e9fc;
   border-top: none;
   padding: 32px 16px 32px 16px;
-  display: block; 
 }
 
 .portfolio-link {
